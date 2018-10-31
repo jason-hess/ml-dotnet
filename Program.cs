@@ -7,7 +7,6 @@ namespace ml_dotnet
 {
     public class Program
     {
-
         // STEP 1: Define your data structures
         // IrisData is used to provide training data, and as
         // input for prediction operations
@@ -41,12 +40,12 @@ namespace ml_dotnet
 
         static void Main(string[] args)
         {
-            // STEP 2: Create an evironment  and load your data
+            // STEP 2: Create an environment  and load your data
             var env = new LocalEnvironment();
 
             // If working in Visual Studio, make sure the 'Copy to Output Directory'
             // property of iris-data.txt is set to 'Copy always'
-            string dataPath = "iris-data.txt";
+            var dataPath = "iris-data.txt";
             var reader = new TextLoader(env,
                 new TextLoader.Arguments()
                 {
@@ -62,7 +61,7 @@ namespace ml_dotnet
                     }
                 });
 
-            IDataView trainingDataView = reader.Read(new MultiFileSource(dataPath));
+            var trainingDataView = reader.Read(new MultiFileSource(dataPath));
 
             // STEP 3: Transform your data and add a learner
             // Assign numeric values to text in the "Label" column, because only
