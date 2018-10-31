@@ -38,7 +38,7 @@ namespace ml_dotnet
             public string PredictedLabels;
         }
 
-        static void Main(string[] args)
+        private static void Main()
         {
             // STEP 2: Create an environment  and load your data
             var env = new LocalEnvironment();
@@ -47,7 +47,7 @@ namespace ml_dotnet
             // property of iris-data.txt is set to 'Copy always'
             var dataPath = "iris-data.txt";
             var reader = new TextLoader(env,
-                new TextLoader.Arguments()
+                new TextLoader.Arguments
                 {
                     Separator = ",",
                     HasHeader = true,
@@ -79,7 +79,7 @@ namespace ml_dotnet
             // STEP 5: Use your model to make a prediction
             // You can change these numbers to test different predictions
             var prediction = model.MakePredictionFunction<IrisData, IrisPrediction>(env).Predict(
-                new IrisData()
+                new IrisData
                 {
                     SepalLength = 3.3f,
                     SepalWidth = 1.6f,
