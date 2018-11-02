@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2048
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ml-dotnet", "ml-dotnet.csproj", "{F7E748A5-979A-4021-B98D-609A7C35483F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLDotNet", "MLDotNet\MLDotNet.csproj", "{A8E36B35-31A3-48EF-A5C9-DA0E687AE303}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F7E748A5-979A-4021-B98D-609A7C35483F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7E748A5-979A-4021-B98D-609A7C35483F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7E748A5-979A-4021-B98D-609A7C35483F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7E748A5-979A-4021-B98D-609A7C35483F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E36B35-31A3-48EF-A5C9-DA0E687AE303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E36B35-31A3-48EF-A5C9-DA0E687AE303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E36B35-31A3-48EF-A5C9-DA0E687AE303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E36B35-31A3-48EF-A5C9-DA0E687AE303}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
