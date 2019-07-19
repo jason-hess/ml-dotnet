@@ -17,8 +17,11 @@ namespace SentimentAnalysis
             var splitDataView = LoadData(mlContext);
             var model = BuildAndTrainModel(mlContext, splitDataView.TrainSet);
             Evaluate(mlContext, model, splitDataView.TestSet);
-            UseModelWithSingleItem(mlContext, model);
-            UseModelWithBatchItems(mlContext, model);
+            //UseModelWithSingleItem(mlContext, model);
+            Console.WriteLine("Please Type Your Review:");
+            var review = Console.ReadLine();
+            UseModelWithSingleItem(mlContext, model, review);
+            //UseModelWithBatchItems(mlContext, model);
         }
 
         public static void UseModelWithBatchItems(MLContext mlContext, ITransformer model)
@@ -53,12 +56,12 @@ namespace SentimentAnalysis
             Console.WriteLine("=============== End of predictions ===============");
         }
 
-        private static void UseModelWithSingleItem(MLContext mlContext, ITransformer model)
+        private static void UseModelWithSingleItem(MLContext mlContext, ITransformer model, string review)
         {
             var predictionFunction = mlContext.Model.CreatePredictionEngine<SentimentData, SentimentPrediction>(model);
             var sampleStatement = new SentimentData
             {
-                SentimentText = "This was a very bad steak"
+                SentimentText = review
             };
             var resultPrediction = predictionFunction.Predict(sampleStatement);
             Console.WriteLine();
