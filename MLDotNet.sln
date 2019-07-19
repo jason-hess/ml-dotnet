@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2048
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLDotNet", "MLDotNet\MLDotNet.csproj", "{A8E36B35-31A3-48EF-A5C9-DA0E687AE303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentAnalysis", "SentimentAnalysis\SentimentAnalysis.csproj", "{906C0D7A-1D32-473E-B3EA-A7CA821EECD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A8E36B35-31A3-48EF-A5C9-DA0E687AE303}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8E36B35-31A3-48EF-A5C9-DA0E687AE303}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8E36B35-31A3-48EF-A5C9-DA0E687AE303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{906C0D7A-1D32-473E-B3EA-A7CA821EECD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906C0D7A-1D32-473E-B3EA-A7CA821EECD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906C0D7A-1D32-473E-B3EA-A7CA821EECD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{906C0D7A-1D32-473E-B3EA-A7CA821EECD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
